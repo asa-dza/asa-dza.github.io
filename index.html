@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="ASA (Advanced Studies Academy) — professional learning center in Algeria. Website launching soon." />
+  <title>ASA — Advanced Studies Academy</title>
+
+  <meta property="og:title" content="ASA — Advanced Studies Academy" />
+  <meta property="og:description" content="Professional learning center — website launching soon." />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="wrap">
+
+    <header>
+      <div class="brand">
+        <div class="logo-box">
+          <img src="assets/logo.png" alt="ASA logo" />
+        </div>
+
+        <div>
+          <div data-lang="en" class="active">
+            <h1>Advanced Studies Academy (ASA)</h1>
+            <p>Professional learning center — Algeria</p>
+          </div>
+
+          <div data-lang="ar">
+            <h1>أكاديمية الدراسات المتقدمة (ASA)</h1>
+            <p>مركز تدريب مهني — الجزائر</p>
+          </div>
+
+          <div data-lang="fr">
+            <h1>Advanced Studies Academy (ASA)</h1>
+            <p>Centre de formation professionnelle — Algérie</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="top-right">
+        <nav>
+          <a href="#areas" data-lang="en" class="active">Areas</a>
+          <a href="#areas" data-lang="ar">المجالات</a>
+          <a href="#areas" data-lang="fr">Domaines</a>
+
+          <a href="#contact" data-lang="en" class="active">Contact</a>
+          <a href="#contact" data-lang="ar">التواصل</a>
+          <a href="#contact" data-lang="fr">Contact</a>
+        </nav>
+
+        <!-- Language order: en, ar, fr -->
+        <div class="lang" aria-label="Language selector">
+          <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
+          <button type="button" data-set-lang="ar" aria-pressed="false">AR</button>
+          <button type="button" data-set-lang="fr" aria-pressed="false">FR</button>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero section-tight">
+      <div class="stack-26">
+        <div class="pill">
+          <span class="dot"></span>
+          <span data-lang="en" class="active">Website launching soon</span>
+          <span data-lang="ar">الموقع قيد الإطلاق قريبًا</span>
+          <span data-lang="fr">Site en cours de lancement</span>
+        </div>
+
+        <div data-lang="en" class="active stack-18">
+          <h2>Structured training and academic support.</h2>
+          <p>
+            ASA is preparing its official launch. Programs will be designed for measurable outcomes, with a learning
+            experience supported by state-of-the-art digital tools (LMS) and AI.
+          </p>
+          <div class="btns">
+            <a class="btn primary" href="#contact">Contact us</a>
+            <a class="btn" href="mailto:info@asadza.com?subject=ASA%20Inquiry">Email: info@asadza.com</a>
+          </div>
+        </div>
+
+        <div data-lang="ar" class="stack-18">
+          <h2>تدريب مُنظَّم ودعم أكاديمي.</h2>
+          <p>
+            تعمل ASA على التحضير لإطلاقها الرسمي. ستُصمَّم البرامج لتحقيق نتائج قابلة للقياس، مع تجربة تعلم مدعومة
+            بأحدث الأدوات الرقمية (نظام إدارة التعلم) وتقنيات الذكاء الاصطناعي.
+          </p>
+          <div class="btns">
+            <a class="btn primary" href="#contact">تواصل معنا</a>
+            <a class="btn" href="mailto:info@asadza.com?subject=استفسار%20ASA">البريد: info@asadza.com</a>
+          </div>
+        </div>
+
+        <div data-lang="fr" class="stack-18">
+          <h2>Formation structurée et accompagnement académique.</h2>
+          <p>
+            ASA prépare son lancement officiel. Nos programmes viseront des résultats mesurables, avec une expérience
+            d’apprentissage soutenue par des outils numériques de pointe (LMS) et l’IA.
+          </p>
+          <div class="btns">
+            <a class="btn primary" href="#contact">Nous contacter</a>
+            <a class="btn" href="mailto:info@asadza.com?subject=Demande%20ASA">Email : info@asadza.com</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Carousel section -->
+    <section class="section" id="areas">
+      <div class="stack-18">
+        <div data-lang="en" class="active">
+          <h3 style="margin:0 0 6px;">Target areas</h3>
+          <p class="muted" style="margin:0;">Indicative focus areas showcased below.</p>
+        </div>
+        <div data-lang="ar">
+          <h3 style="margin:0 0 6px;">مجالات الاستهداف</h3>
+          <p class="muted" style="margin:0;">المجالات المعروضة أدناه إرشادية.</p>
+        </div>
+        <div data-lang="fr">
+          <h3 style="margin:0 0 6px;">Domaines ciblés</h3>
+          <p class="muted" style="margin:0;">Les domaines ci-dessous sont à titre indicatif.</p>
+        </div>
+
+        <div class="carousel" aria-label="ASA focus areas carousel">
+          <div class="controls">
+            <button class="ctrl" type="button" id="prevBtn" aria-label="Previous slide">‹</button>
+            <button class="ctrl" type="button" id="nextBtn" aria-label="Next slide">›</button>
+          </div>
+
+          <div class="slides" id="slides">
+            <figure class="slide">
+              <img src="assets/medecine.jpg" alt="Medicine training" />
+              <div class="overlay"></div>
+              <figcaption class="caption">
+                <div class="cap-text">
+                  <p class="cap-title" data-lang="en" class="active">Medicine</p>
+                  <p class="cap-title" data-lang="ar">الطب</p>
+                  <p class="cap-title" data-lang="fr">Médecine</p>
+
+                  <p class="cap-sub" data-lang="en" class="active">Continuing professional development and clinical upskilling.</p>
+                  <p class="cap-sub" data-lang="ar">تطوير مهني مستمر ورفع الكفاءة.</p>
+                  <p class="cap-sub" data-lang="fr">Développement professionnel continu et montée en compétences.</p>
+                </div>
+              </figcaption>
+            </figure>
+
+            <figure class="slide">
+              <img src="assets/dentistry.jpg" alt="Dentistry training" />
+              <div class="overlay"></div>
+              <figcaption class="caption">
+                <div class="cap-text">
+                  <p class="cap-title" data-lang="en" class="active">Dentistry</p>
+                  <p class="cap-title" data-lang="ar">طب الأسنان</p>
+                  <p class="cap-title" data-lang="fr">Odontologie</p>
+
+                  <p class="cap-sub" data-lang="en" class="active">Professional training and practice-oriented learning.</p>
+                  <p class="cap-sub" data-lang="ar">تدريب مهني وتعلم تطبيقي.</p>
+                  <p class="cap-sub" data-lang="fr">Formation professionnelle et apprentissage orienté pratique.</p>
+                </div>
+              </figcaption>
+            </figure>
+
+            <figure class="slide">
+              <img src="assets/AI-neural-network.jpg" alt="AI and neural networks" />
+              <div class="overlay"></div>
+              <figcaption class="caption">
+                <div class="cap-text">
+                  <p class="cap-title" data-lang="en" class="active">AI</p>
+                  <p class="cap-title" data-lang="ar">الذكاء الاصطناعي</p>
+                  <p class="cap-title" data-lang="fr">IA</p>
+
+                  <p class="cap-sub" data-lang="en" class="active">Foundations and applied AI, supported by modern learning tools.</p>
+                  <p class="cap-sub" data-lang="ar">أساسيات وتطبيقات الذكاء الاصطناعي بأدوات تعلم حديثة.</p>
+                  <p class="cap-sub" data-lang="fr">Fondations et IA appliquée, soutenues par des outils modernes.</p>
+                </div>
+              </figcaption>
+            </figure>
+
+            <figure class="slide">
+              <img src="assets/programming.jpg" alt="Programming and software engineering" />
+              <div class="overlay"></div>
+              <figcaption class="caption">
+                <div class="cap-text">
+                  <p class="cap-title" data-lang="en" class="active">Programming</p>
+                  <p class="cap-title" data-lang="ar">البرمجة</p>
+                  <p class="cap-title" data-lang="fr">Programmation</p>
+
+                  <p class="cap-sub" data-lang="en" class="active">Software engineering skills and practical problem-solving.</p>
+                  <p class="cap-sub" data-lang="ar">مهارات هندسة البرمجيات وحل المشكلات عمليًا.</p>
+                  <p class="cap-sub" data-lang="fr">Compétences en génie logiciel et résolution de problèmes.</p>
+                </div>
+              </figcaption>
+            </figure>
+
+            <figure class="slide">
+              <img src="assets/academic.jpg" alt="College-level academic support" />
+              <div class="overlay"></div>
+              <figcaption class="caption">
+                <div class="cap-text">
+                  <p class="cap-title" data-lang="en" class="active">Academic support</p>
+                  <p class="cap-title" data-lang="ar">الدعم الأكاديمي</p>
+                  <p class="cap-title" data-lang="fr">Soutien académique</p>
+
+                  <p class="cap-sub" data-lang="en" class="active">College-level preparation, tutoring, and structured learning paths.</p>
+                  <p class="cap-sub" data-lang="ar">تحضير جامعي ودروس دعم ومسارات تعلم منظمة.</p>
+                  <p class="cap-sub" data-lang="fr">Préparation universitaire, tutorat et parcours structurés.</p>
+                </div>
+              </figcaption>
+            </figure>
+
+            <figure class="slide">
+              <img src="assets/soft-skills.jpg" alt="Soft skills and professional development" />
+              <div class="overlay"></div>
+              <figcaption class="caption">
+                <div class="cap-text">
+                  <p class="cap-title" data-lang="en" class="active">Soft skills</p>
+                  <p class="cap-title" data-lang="ar">المهارات الشخصية</p>
+                  <p class="cap-title" data-lang="fr">Soft skills</p>
+
+                  <p class="cap-sub" data-lang="en" class="active">Communication, teamwork, and career-ready skills.</p>
+                  <p class="cap-sub" data-lang="ar">التواصل والعمل الجماعي ومهارات مهنية.</p>
+                  <p class="cap-sub" data-lang="fr">Communication, travail d’équipe et compétences professionnelles.</p>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="dots" id="dots" aria-label="Slide navigation"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="card">
+        <div class="grid">
+          <div class="col6">
+            <div data-lang="en" class="active">
+              <h3>Initial areas of interest</h3>
+              <ul>
+                <li><strong>Medical training programs in medicine and dentistry</strong></li>
+                <li><strong>AI and Computer Science</strong></li>
+                <li><strong>College-level academic support</strong></li>
+                <li><strong>Soft skills</strong></li>
+              </ul>
+              <p class="muted" style="margin-top:12px;">Final offerings and schedules will be published on the full website.</p>
+            </div>
+
+            <div data-lang="ar">
+              <h3>مجالات الاهتمام الأولية</h3>
+              <ul>
+                <li><strong>برامج تدريب طبي في الطب وطب الأسنان</strong></li>
+                <li><strong>الذكاء الاصطناعي وعلوم الحاسوب</strong></li>
+                <li><strong>دعم أكاديمي بمستوى جامعي</strong></li>
+                <li><strong>المهارات الشخصية</strong></li>
+              </ul>
+              <p class="muted" style="margin-top:12px;">سيتم نشر العروض النهائية والجداول على الموقع الكامل.</p>
+            </div>
+
+            <div data-lang="fr">
+              <h3>Domaines d’intérêt initiaux</h3>
+              <ul>
+                <li><strong>Formations médicales en médecine et odontologie</strong></li>
+                <li><strong>IA et Informatique</strong></li>
+                <li><strong>Soutien académique niveau universitaire</strong></li>
+                <li><strong>Compétences transversales</strong></li>
+              </ul>
+              <p class="muted" style="margin-top:12px;">Les offres finales et les calendriers seront publiés sur le site complet.</p>
+            </div>
+          </div>
+
+          <div class="col6">
+            <div data-lang="en" class="active">
+              <h3>Learning experience</h3>
+              <ul>
+                <li>Clear learning paths and outcomes</li>
+                <li>Practical exercises and assessments</li>
+                <li>Hybrid-ready delivery (in-person / online)</li>
+                <li>Supported by an LMS and AI-enabled learning tools</li>
+              </ul>
+            </div>
+
+            <div data-lang="ar">
+              <h3>تجربة التعلم</h3>
+              <ul>
+                <li>مسارات تعلم واضحة ومخرجات محددة</li>
+                <li>تمارين عملية وتقييمات</li>
+                <li>تقديم مرن (حضوري / عن بُعد)</li>
+                <li>مدعومة بنظام إدارة تعلم وتقنيات ذكاء اصطناعي</li>
+              </ul>
+            </div>
+
+            <div data-lang="fr">
+              <h3>Expérience d’apprentissage</h3>
+              <ul>
+                <li>Parcours clairs et objectifs définis</li>
+                <li>Exercices pratiques et évaluations</li>
+                <li>Formats hybrides (présentiel / en ligne)</li>
+                <li>Soutenue par un LMS et des outils IA</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col12" id="contact" style="margin-top: 6px;">
+            <div data-lang="en" class="active">
+              <h3>Contact</h3>
+              <div class="stack-12">
+                <div class="muted">General inquiries: <a class="btn" style="padding:6px 10px; margin-left:8px;" href="mailto:info@asadza.com">info@asadza.com</a></div>
+                <div class="muted">Administration: <a class="btn" style="padding:6px 10px; margin-left:8px;" href="mailto:admin@asadza.com">admin@asadza.com</a></div>
+              </div>
+            </div>
+
+            <div data-lang="ar">
+              <h3>التواصل</h3>
+              <div class="stack-12">
+                <div class="muted">استفسارات عامة: <a class="btn" style="padding:6px 10px; margin-right:8px;" href="mailto:info@asadza.com">info@asadza.com</a></div>
+                <div class="muted">الإدارة: <a class="btn" style="padding:6px 10px; margin-right:8px;" href="mailto:admin@asadza.com">admin@asadza.com</a></div>
+              </div>
+            </div>
+
+            <div data-lang="fr">
+              <h3>Contact</h3>
+              <div class="stack-12">
+                <div class="muted">Demandes générales : <a class="btn" style="padding:6px 10px; margin-left:8px;" href="mailto:info@asadza.com">info@asadza.com</a></div>
+                <div class="muted">Administration : <a class="btn" style="padding:6px 10px; margin-left:8px;" href="mailto:admin@asadza.com">admin@asadza.com</a></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="y"></span> ASA — asadza.com
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+
+    // Language switching (order: en, ar, fr)
+    const supported = new Set(["en", "ar", "fr"]);
+    const stored = localStorage.getItem("asa_lang");
+    const browser = (navigator.language || "en").slice(0,2).toLowerCase();
+    const initial = supported.has(stored) ? stored : (supported.has(browser) ? browser : "en");
+
+    function setLang(lang){
+      if(!supported.has(lang)) lang = "en";
+
+      document.querySelectorAll("[data-lang]").forEach(el => {
+        el.classList.toggle("active", el.getAttribute("data-lang") === lang);
+      });
+
+      document.querySelectorAll("[data-set-lang]").forEach(btn => {
+        btn.setAttribute("aria-pressed", btn.getAttribute("data-set-lang") === lang ? "true" : "false");
+      });
+
+      document.documentElement.lang = lang;
+      document.documentElement.dir = (lang === "ar") ? "rtl" : "ltr";
+
+      localStorage.setItem("asa_lang", lang);
+    }
+
+    document.querySelectorAll("[data-set-lang]").forEach(btn => {
+      btn.addEventListener("click", () => setLang(btn.getAttribute("data-set-lang")));
+    });
+
+    setLang(initial);
+
+    // Carousel
+    const slidesEl = document.getElementById("slides");
+    const slideCount = slidesEl.children.length;
+    const dotsEl = document.getElementById("dots");
+    const prevBtn = document.getElementById("prevBtn");
+    const nextBtn = document.getElementById("nextBtn");
+
+    let idx = 0;
+    let timer = null;
+
+    function renderDots(){
+      dotsEl.innerHTML = "";
+      for(let i=0;i<slideCount;i++){
+        const b = document.createElement("button");
+        b.className = "dotbtn";
+        b.type = "button";
+        b.setAttribute("aria-label", "Go to slide " + (i+1));
+        b.setAttribute("aria-current", i === idx ? "true" : "false");
+        b.addEventListener("click", () => go(i, true));
+        dotsEl.appendChild(b);
+      }
+    }
+
+    function go(i, userAction=false){
+      idx = (i + slideCount) % slideCount;
+      slidesEl.style.transform = `translateX(${-idx * 100}%)`;
+      renderDots();
+      if(userAction) restartAuto();
+    }
+
+    function next(userAction=false){ go(idx + 1, userAction); }
+    function prev(userAction=false){ go(idx - 1, userAction); }
+
+    function restartAuto(){
+      if(timer) clearInterval(timer);
+      timer = setInterval(() => next(false), 5200);
+    }
+
+    prevBtn.addEventListener("click", () => prev(true));
+    nextBtn.addEventListener("click", () => next(true));
+
+    document.addEventListener("keydown", (e) => {
+      if(e.key === "ArrowLeft") prev(true);
+      if(e.key === "ArrowRight") next(true);
+    });
+
+    go(0);
+    restartAuto();
+  </script>
+</body>
+</html>
