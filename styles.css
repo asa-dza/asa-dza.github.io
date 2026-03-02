@@ -307,9 +307,9 @@ html[dir="rtl"] .caption{
   background:
     linear-gradient(
       to top,
-      rgba(27,40,36,.78) 0%,
-      rgba(27,40,36,.20) 55%,
-      rgba(27,40,36,.10) 100%
+      rgba(27,40,36,.45) 0%,
+      rgba(27,40,36,.12) 55%,
+      rgba(27,40,36,.06) 100%
     );
 }
 
